@@ -193,13 +193,11 @@ Fields 2 and 3 are provided for information only to assist with manual assessmen
 
 # Example KB Lookup File Contents
 
-Note that EOL indicates end of line added for clarity (the characters EOL are NOT included in the file).
-
-    ImageMagick;ImageMagick;http://www.imagemagick.org/;https://hub.blackducksoftware.com/api/components/b2168761-819b-40b7-83d4-ebabfbc7f110;6.9.10.36;https://hub.blackducksoftware.com/api/components/b2168761-819b-40b7-83d4-ebabfbc7f110/versions/7e8bc4b3-17b4-4da8-a79f-cb4cfb06de90;EOL
-    OpenEXR-tools;OpenEXR;http://www.openexr.com;https://hub.blackducksoftware.com/api/components/c21b38af-0b90-48be-afe6-17cf693852d2;EOL
-    TclCurl;tclcurl;http://personal.telefonica.terra.es/web/getleft/tclcurl/index.html;https://hub.blackducksoftware.com/api/components/795dae6a-452d-4902-b5a4-641b206da030;EOL
-    Xaw3d;;;NO MATCH;EOL
-    Tktable;tktable;http://tktable.sourceforge.net/;https://hub.blackducksoftware.com/api/components/75a17ce4-f1c7-4c68-a57a-a6f5e2d9902f;2.10;https://hub.blackducksoftware.com/api/components/75a17ce4-f1c7-4c68-a57a-a6f5e2d9902f/versions/5df458aa-0853-4684-9003-f56a1040fde9;EOL
+    ImageMagick;ImageMagick;http://www.imagemagick.org/;https://hub.blackducksoftware.com/api/components/b2168761-819b-40b7-83d4-ebabfbc7f110;6.9.10.36;https://hub.blackducksoftware.com/api/components/b2168761-819b-40b7-83d4-ebabfbc7f110/versions/7e8bc4b3-17b4-4da8-a79f-cb4cfb06de90;
+    OpenEXR-tools;OpenEXR;http://www.openexr.com;https://hub.blackducksoftware.com/api/components/c21b38af-0b90-48be-afe6-17cf693852d2;
+    TclCurl;tclcurl;http://personal.telefonica.terra.es/web/getleft/tclcurl/index.html;https://hub.blackducksoftware.com/api/components/795dae6a-452d-4902-b5a4-641b206da030;
+    Xaw3d;;;NO MATCH;
+    Tktable;tktable;http://tktable.sourceforge.net/;https://hub.blackducksoftware.com/api/components/75a17ce4-f1c7-4c68-a57a-a6f5e2d9902f;2.10;https://hub.blackducksoftware.com/api/components/75a17ce4-f1c7-4c68-a57a-a6f5e2d9902f/versions/5df458aa-0853-4684-9003-f56a1040fde9;
 
 Note that the `Xaw3d` component is shown with `NO MATCH` indicating it could not be found automatically in `kblookup` mode, so this entry could be manually modified to add component and/or version URLs manually – see below.
 
