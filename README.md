@@ -163,7 +163,7 @@ Further explanation of options for import mode:
 
 # BUILD MANIFEST FILE
 
-The build manifest file is created by a Bitbake build process and is located in <project path>/build/tmp/deploy/images/<machine name>/<image name>-<machine name>.manifest by default - for example /home/myuser/my_yocto/build/tmp/deploy/images/wac-gen2/wac-core-image-wac-gen2.manifest. 
+The build manifest file is created by a Bitbake build process and is located in PROJECTPATH/build/tmp/deploy/images/MACHINENAME/IMAGENAME-MACHINENAME.manifest by default - for example /home/myuser/my_yocto/build/tmp/deploy/images/wac-gen2/wac-core-image-wac-gen2.manifest. 
 
 This is a (required) input file for both the `kblookup` and `import` modes which contains a list of component names and versions to be imported (one per line). It is specified using the `-c` (or `--component_file`) option (e.g. `-c compfile`).
 
