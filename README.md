@@ -26,7 +26,7 @@ The second mode (`import`) reads the input component list and the KB match file 
 
 The following diagram explains the flow of data for the 2 modes:
 
-![](https://github.com/matthewb66/import_yocto_build_manifest/images/import_yocto_build_manifest.jpg)
+![](https://github.com/matthewb66/import_yocto_build_manifest/images/import_yocto_build_manifest.png)
 
 # PREREQUISITES
 
