@@ -176,9 +176,10 @@ The file format is shown below:
        <component_name>;<replacement_string>
        <skip_string>;SKIP 
 
-The first line would replace <component_name> from the build manifest file with <replacement_string> for matching in the KB.
+The first line would replace <component_name> from the build manifest file with <replacement_string> for component matching in the KB.
+The second line will skip any components starting with <skip_string>.
 
-An example replacement file for a sample Yocto build manifest is included in this package.
+An example replacement file (replace.txt) for a sample Yocto build manifest is included in this package.
 
 # KB LOOKUP FILE
 
