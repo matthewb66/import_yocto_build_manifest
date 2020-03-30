@@ -568,12 +568,12 @@ def listoutput(outline, newline):
 #
 # Main Program
 
-parser = argparse.ArgumentParser(description='Process or import yocto build manifest list into project/version', prog='import_manifest')
+parser = argparse.ArgumentParser(description='Process or import yocto build manifest list into project/version', prog='import_yocto_build_manifest')
 
 subparsers = parser.add_subparsers(help='Choose operation mode', dest='command')
 # create the parser for the "kblookup" command
 parser_g = subparsers.add_parser('kblookup', help='Process build manifest to find matching KB URLs & export to file')
-parser_g.add_argument('-c', '--component_file', help='Input component list file', required=True)
+parser_g.add_argument('-c', '--component_file', help='Input build manifest file', required=True)
 parser_g.add_argument('-r', '--replace_file', help='File of input component name replacement strings and SKIP component strings', required=True)
 parser_g.add_argument('-k', '--kbfile', help='Input file of KB component IDs matching manifest components')
 parser_g.add_argument('-o', '--output', help='Output file of KB component IDs matching manifest components (default "kblookup.out")', default='kblookup.out')
@@ -582,7 +582,7 @@ parser_g.add_argument('-l', '--listfile', help='Create an output file of compone
 
 # create the parser for the "import" command
 parser_i = subparsers.add_parser('import', help='Import build manifest into specified Black Duck project/version using KB URLs from supplied file')
-parser_i.add_argument('-c', '--component_file', help='Input component list file', required=True)
+parser_i.add_argument('-c', '--component_file', help='Input build manifest file', required=True)
 parser_i.add_argument('-k', '--kbfile', help='Input file of KB component IDs and URLs matching manifest components', required=True)
 parser_i.add_argument('-p', '--project', help='Black Duck project name',required=True)
 parser_i.add_argument('-v', '--version', help='Black Duck version name',required=True)
