@@ -1,0 +1,20 @@
+kernel-4.14.68;kernel
+libacl1;libacl
+libattr1;libattr
+libavahi-common3;avahi
+libffi6;libffi
+libgcc1;libgcc
+libgnutls30;gnutls
+libldap-2.4-2;LDAP Tool Box Project
+libmosquitto1;mosquitto
+libncursesw5;ncurses
+libpcre1;libpcre
+libsodium23;libsodium
+libss2;libss
+libstdc++6;libstdc++
+libtirpc3;libtirpc
+libunistring2;linunistring
+psplash-raspberrypi;psplash
+kernel-module;SKIP
+libpoco;SKIP
+linux-firmware;SKIP
