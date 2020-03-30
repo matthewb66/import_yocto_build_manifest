@@ -86,7 +86,7 @@ Example command line:
 
     python3 import_yocto_build_manifest.py kblookup -c wac-core-image-wac-gen2.manifest -r replace.txt -l components.output
     
-This command would process the build manifest file (wac-core-image-wac-gen2.manifest) for components, use the replacement file (replace.txt) to define components to skip or replace and produce the default output kblookup file (kblookup.out).
+This command would process the build manifest file (wac-core-image-wac-gen2.manifest) for components, use the replacement file (replace.txt) to define components to skip/replace, generate a list of processed components (components.output) and produce the default output kblookup file (kblookup.out).
     
 Note that `kblookup` mode stops at 500 components in order to stop a timeout of the API connection session (20 minutes). The script can be re-run in `kblookup` mode appending to the output KB Lookup file as many times as necessary on the same component list to match more than 500 components provided the output KB Lookup file is specified as input (`-k kbfile`).
 
