@@ -90,18 +90,18 @@ The full list of options in `kblookup` mode can be displayed using the command:
 
 Usage for kblookup mode is:
 
-    usage: import_manifest kblookup [-h] -c COMPONENT_FILE -r REPLACE_FILE
+    usage: import_yocto_build_manifest kblookup [-h] -c MANIFEST_FILE -r REPLACE_FILE
                                 [-k KBFILE] [-o OUTPUT] [-a] [-l LISTFILE]
 
 Further explanation of options for kblookup mode is provided below:
 
-    usage: import_manifest kblookup [-h] -c COMPONENT_FILE -r REPLACE_FILE
+    usage: import_manifest kblookup [-h] -c MANIFEST_FILE -r REPLACE_FILE
                                 [-k KBFILE] [-o OUTPUT] [-a] [-l LISTFILE]
 
     optional arguments:
       -h, --help            show this help message and exit
       -c COMPONENT_FILE, --component_file COMPONENT_FILE
-                            Input component list file
+                            Input build manifest file
       -r REPLACE_FILE, --replace_file REPLACE_FILE
                             File of input component name replacement strings and SKIP
                             component strings
@@ -124,12 +124,12 @@ The full list of options in import mode can be displayed using the command:
 
 The usage for import mode is:
 
-    usage: import_manifest import [-h] -k KBFILE -p PROJECT -v VERSION -c COMPONENT_FILE
+    usage: import_manifest import [-h] -k KBFILE -p PROJECT -v VERSION -c MANIFEST_FILE
 
 Further explanation of options for import mode:
 
-    -c COMPONENT_FILE, --component_file COMPONENT_FILE
-                        REQUIRED Input component list file.
+    -c COMPONENT_FILE, --component_file MANIFEST_FILE
+                        REQUIRED Input build manifest file.
 
     -k KBFILE, --kbfile KBFILE
                         REQUIRED input KB Lookup file – list of KB component IDs and URLs
