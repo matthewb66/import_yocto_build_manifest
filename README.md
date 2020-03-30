@@ -80,8 +80,14 @@ The `kblookup` mode requires a build manifest file as input. An output KB Lookup
 
 A replacement file (-r repfile) must also be specified which is used to replace component names to match in the KB and also define components to be skipped.
 
-The -l option supports creating a list of matched and unmatched entries from the build manifest file written to the KBlookup file.
+The list (-l) option supports creating a list of matched and unmatched entries from the build manifest file written to the KBlookup file.
 
+Example command line:
+
+    python3 import_yocto_build_manifest.py kblookup -c wac-core-image-wac-gen2.manifest -r replace.txt -l components.output
+    
+This command would process the build manifest file (wac-core-image-wac-gen2.manifest) for components, use the replacement file (replace.txt) to define components to skip or replace and produce the default output kblookup file (kblookup.out).
+    
 Note that `kblookup` mode stops at 500 components in order to stop a timeout of the API connection session (20 minutes). The script can be re-run in `kblookup` mode appending to the output KB Lookup file as many times as necessary on the same component list to match more than 500 components provided the output KB Lookup file is specified as input (`-k kbfile`).
 
 The full list of options in `kblookup` mode can be displayed using the command:
@@ -117,6 +123,12 @@ Further explanation of options for kblookup mode is provided below:
 ## import Mode
 
 The `import` mode requires a component list file and a KB Lookup File to be specified and will lookup the components in the KB Lookup File to add new manual components to the specified Black Duck project/version (which can be created by the script if they do not already exist subject to permissions).
+
+Example command line:
+
+    python3 import_yocto_build_manifest.py import -c wac-core-image-wac-gen2.manifest -k kblookup.out -p myproject -v 1.0
+    
+This command would process the build manifest file (wac-core-image-wac-gen2.manifest) for components looking them up in the kblookup file (kblookup.out), create the Black Duck project (myproject) and version (1.0) then add the components as manually added components.
 
 The full list of options in import mode can be displayed using the command:
 
