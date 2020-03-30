@@ -28,6 +28,8 @@ The following diagram explains the flow of data for the 2 modes:
 
 ![](https://github.com/matthewb66/import_yocto_build_manifest/blob/master/images/import_yocto_build_manifest.png)
 
+The ability to specify the kblookup file as an input to the `kblookup` mode allows incremental scans to be performed without having to search for components which have been previously matched.
+
 # PREREQUISITES
 
 Python 3 and the Black Duck https://github.com/blackducksoftware/hub-rest-api-python package must be installed and configured to enable the Python API scripts for Black Duck prior to using this script.
