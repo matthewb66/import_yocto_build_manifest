@@ -649,7 +649,6 @@ if args.command == 'kblookup':
             logging.info("Component SKIPPED")
             count_skipped += 1
             continue
-        processed_comps += 1
 
         if package in kblookupdict:
             #
@@ -703,6 +702,7 @@ if args.command == 'kblookup':
                         logging.info("No version match found in KB - updating entry in output KBlookup file")
                         update_kbfile_entry(args.output, package, version, kblookupdict[package][0], "NO VERSION MATCH")
                         count_novermatch += 1
+                    processed_comps += 1
 
         else:
             logging.info("Component not found in KBLookup file")
@@ -712,6 +712,8 @@ if args.command == 'kblookup':
             else:
                 count_nokbmatch += 1
             add_kbfile_entry(args.output, newkbline)
+            processed_comps += 1
+
 
         if processed_comps > 500:
             print("500 components processed - terminating. Please rerun with -k option to append to kbfile")
