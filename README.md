@@ -1,5 +1,9 @@
 # Synopsys Yocto Build Manifest Import - import_yocto_build_manifest.py
 
+```diff
+- Note that this technique for importing a Yocto build manifest has been replaced by an improved prototype script
+- available at https://github.com/matthewb66/import_yocto_bm which should be used instead.
+```
 # INTRODUCTION
 
 This script is provided under an OSS license as an example of how to manage Yocto projects.
